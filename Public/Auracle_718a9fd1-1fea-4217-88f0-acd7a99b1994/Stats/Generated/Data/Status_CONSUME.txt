@@ -112,7 +112,6 @@ data "DisplayName" "LEADERSHIP_AURACLE_STATS_DisplayName"
 data "DisplayNameRef" "Leadership Auracle Stats"
 data "Description" "LEADERSHIP_AURACLE_STATS_Description"
 data "DescriptionRef" "Leadership Auracle Stats"
-data "Icon" "Skill_Skillcrafting_Water_VampiricHungerAura"
 data "StatsId" "LeadershipAuracle"
 
 new entry "LEADERSHIP_AURACLE"
