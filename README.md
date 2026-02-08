@@ -9,10 +9,14 @@ A character with points in Leadership will be granted the appropriate buffs rela
 The vanilla Leadership status is untouched by this mod and will continue to work as it always has.
 
 **Mod Changes**
+The party member(s) with the highest Leadership score will be permanantly granted a new Orange Leadership status. This status cannot be overwritten by the vanilla status preventing a party member with a lower Leadership score overwriting the buff.
+![Leader in sight](https://raw.githubusercontent.com/rkr87/Auracle/refs/heads/master/.github/Leading%20party.jpg)
 
-The party member(s) with the highest Leadership score will be permanantly granted a new Orange Leadership status - this status cannot be overwritten by the vanilla status preventing a party member with a lower Leadership score overwriting the buff.
+Any other party member with a Leadership score will be granted a new Blue Leadership status when not in range of a party member with a higher Leadership score.
+![Leader not in sight](https://raw.githubusercontent.com/rkr87/Auracle/refs/heads/master/.github/Leader%20not%20in%20sight.jpg)
 
-Any other party member with a Leadership score will be granted a new Blue Leadership status when not in range of a party member with a higher Leadership score - this status will be overwritten by the vanilla status when in range of a party member with a higher score.
+This status will be overwritten by the vanilla status when in range of a party member with a higher Leadership score.
+![Leader in sight](https://raw.githubusercontent.com/rkr87/Auracle/refs/heads/master/.github/Leader%20in%20sight.jpg)
 
 ## Aura Range Increase
 Several aura and aura-like statuses have had their application range increased to 30.
