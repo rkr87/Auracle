@@ -6,8 +6,6 @@ An aura status improvement mod for **Divinity: Original Sin 2** - requires [Norb
 ## Apply Leadership to Self
 A character with points in Leadership will be granted the appropriate buffs relating to their personal Leadership level.
 
-The vanilla Leadership status is untouched by this mod and will continue to work as it always has.
-
 **Mod Changes**
 
 The party member(s) with the highest Leadership score will be permanently granted a new Orange Leadership status. This status cannot be overwritten by the vanilla status preventing a party member with a lower Leadership score overwriting the buff.
