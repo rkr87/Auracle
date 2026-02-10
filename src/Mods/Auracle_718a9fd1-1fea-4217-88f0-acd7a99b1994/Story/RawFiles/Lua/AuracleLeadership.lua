@@ -3,6 +3,8 @@ Ext.Require("Constants.lua")
 Ext.Require("PartyManager.lua")
 Ext.Require("CharacterTools.lua")
 
+local isInitialised = false
+local pauseScript = false
 local partyStacks = {}
 
 local function ResetLeadershipStats(characterGuid, clearStatus)
@@ -44,10 +46,9 @@ end
 
 local function ApplyLeadershipStatus(partyMember, status, leadershipThresold)
     if partyMember.leadership >= leadershipThresold then
-        if HasActiveStatus(partyMember.guid, status) > 0 then
-            return true
+        if HasActiveStatus(partyMember.guid, status) == 0 then
+            ApplyStatus(partyMember.guid, status, -1, 1)
         end
-        ApplyStatus(partyMember.guid, status, -1, 1)
         return true
     end
     RemoveStatus(partyMember.guid, status)
@@ -70,14 +71,18 @@ local function UpdateLeadershipStatus(partyMembers, bestLeadership)
 end
 
 local function CheckLeadershipStatus()
-    if WaitForSeconds(3) then
+    if pauseScript or WaitForSeconds(3) then
         return
     end
     local partyMembers, bestLeadership = GetPartyMembers()
     UpdateLeadershipStatus(partyMembers, bestLeadership)
 end
 
-function InitAuracleLeadership()
-    Ext.Osiris.RegisterListener(PARTY_MEMBER_EVENT, 1, "before", AddPartyMember)
-    Ext.Events.Tick:Subscribe(CheckLeadershipStatus)
+function InitAuracleLeadership(gameRunning)
+    pauseScript = not gameRunning
+    if not isInitialised then
+        Ext.Osiris.RegisterListener(PARTY_MEMBER_EVENT, 1, "before", AddPartyMember)
+        Ext.Events.Tick:Subscribe(CheckLeadershipStatus)
+        isInitialised = true
+    end
 end
