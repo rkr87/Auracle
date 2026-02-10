@@ -12,41 +12,6 @@
 					<attribute id="UUID" type="22" value="LEADERSHIP_AURACLE_Description" />
 				</node>
 				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Character is protecting nearby Allies|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="GUARDIAN_ANGEL_AURA_Description" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="Character's movement speed is increased." />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="FAVOURABLE_WIND_AURA_Description" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Dodging and movement speed increased for allies around you.|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="EVASION_AURA_Description" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Providing bonus fire damage to self and allies.|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="FIRE_BRAND_AURA_Description" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="| Providing aura to allies that allows healing for [1]% damage dealt to Vitality with direct attacks.|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="VAMPIRISM_AURA_Description" />
-				</node>
-				<node id="TranslatedStringKey">
 					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="Leadership Auracle Stats" />
 					<attribute id="ExtraData" type="23" value="" />
 					<attribute id="Speaker" type="22" value="" />

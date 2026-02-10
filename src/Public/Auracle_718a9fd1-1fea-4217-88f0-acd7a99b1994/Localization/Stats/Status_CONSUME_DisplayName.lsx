@@ -12,48 +12,6 @@
 					<attribute id="UUID" type="22" value="LEADERSHIP_AURACLE_DisplayName" />
 				</node>
 				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Guardian Angel Aura|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="GUARDIAN_ANGEL_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="Favourable Wind Aura" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="FAVOURABLE_WIND_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Evasion Aura|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="EVASION_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Fire Brand|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="FIRE_BRAND_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="|Venom Aura|" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="VENOM_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
-					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="| Vampiric Hunger Aura |" />
-					<attribute id="ExtraData" type="23" value="" />
-					<attribute id="Speaker" type="22" value="" />
-					<attribute id="Stub" type="19" value="True" />
-					<attribute id="UUID" type="22" value="VAMPIRISM_AURA_DisplayName" />
-				</node>
-				<node id="TranslatedStringKey">
 					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="Leadership Auracle Stats" />
 					<attribute id="ExtraData" type="23" value="" />
 					<attribute id="Speaker" type="22" value="" />

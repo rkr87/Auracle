@@ -1,9 +1,8 @@
 Ext.Require("AuracleLeadership.lua")
 
 local function ReadyCheck(gameStateEvent)
-    if gameStateEvent.ToState == "Running" then
-        InitAuracleLeadership()
-    end
+    local gameRunning = gameStateEvent.ToState == "Running"
+    InitAuracleLeadership(gameRunning)
 end
 
 Ext.Events.GameStateChanged:Subscribe(ReadyCheck)

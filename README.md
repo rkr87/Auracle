@@ -32,5 +32,4 @@ Several aura and aura-like statuses have had their application range increased t
 
 **Aura-Like**
 
-
 - Master Of Sparks (from 5)
