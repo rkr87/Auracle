@@ -5,9 +5,14 @@ Ext.Require("CharacterTools.lua")
 
 local partyStacks = {}
 
-local function ResetLeadershipStats(characterGuid)
+local function ResetLeadershipStats(characterGuid, clearStatus)
+    clearStatus = clearStatus or false
     partyStacks[characterGuid] = 0
     RemoveStatus(characterGuid, STATUS_STACKABLE_STATS)
+    if clearStatus then
+        RemoveStatus(characterGuid, STATUS_BEST)
+        RemoveStatus(characterGuid, STATUS_LOW)
+    end
     return 0
 end
 
@@ -51,11 +56,16 @@ end
 
 local function UpdateLeadershipStatus(partyMembers, bestLeadership)
     for _, member in pairs(partyMembers) do
+        if member.leadership <= 0 then
+            ResetLeadershipStats(member.guid, true)
+            goto continue
+        end
         local best = ApplyLeadershipStatus(member, STATUS_BEST, bestLeadership)
         if not best then
             ApplyLeadershipStatus(member, STATUS_LOW, 1)
         end
         ApplyLeadershipStats(member, best)
+        ::continue::
     end
 end
 
