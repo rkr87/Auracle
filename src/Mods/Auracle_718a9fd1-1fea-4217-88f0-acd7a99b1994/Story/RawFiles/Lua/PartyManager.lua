@@ -6,10 +6,6 @@ local partyMembers = {}
 local bestLeadership = -1
 
 function AddPartyMember(character_uuid)
-    if partyMembers[character_uuid] ~= nil then
-        return
-    end
-
     local character = Ext.Entity.GetCharacter(character_uuid)
     local leadership = GetCharacterLeadership(character)
 
@@ -27,6 +23,9 @@ end
 function GetPartyMembers()
     partyMembers = {}
     bestLeadership = -1
-    Osi.Auracle_Get_Party()
+    local dbPlayers = Osi.DB_IsPlayer:Get(nil)
+    for _, dbChar in pairs(dbPlayers) do
+        AddPartyMember(dbChar[1])
+    end
     return partyMembers, bestLeadership
 end
