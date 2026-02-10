@@ -81,7 +81,6 @@ end
 function InitAuracleLeadership(gameRunning)
     pauseScript = not gameRunning
     if not isInitialised then
-        Ext.Osiris.RegisterListener(PARTY_MEMBER_EVENT, 1, "before", AddPartyMember)
         Ext.Events.Tick:Subscribe(CheckLeadershipStatus)
         isInitialised = true
     end
